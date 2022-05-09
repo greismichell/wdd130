@@ -39,9 +39,16 @@ p {
     width: 80%;
     padding: 10px;
   }
-footer {
+nav, footer {
     background-color: steelblue;
     color: white;
     text-align: center;
   }
-
+footer p{
+  font-size: 20px;
+  margin: 20px auto;
+}
+a:hover {
+  background-color: white;
+  color: steelblue;
+}
