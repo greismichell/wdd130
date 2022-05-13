@@ -1,0 +1,53 @@
+body{
+    background-color: pink;
+    text-align: center;
+}
+main p{
+    font-size: 1em;
+    line-height: 1em;
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+h1:hover{
+    
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+img {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+    
+}
+p3{
+    display: block;
+    width: 20%;
+    font-size: 30px;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+}
+p{
+    display: block;
+    color: white;
+    font-size: 1em;
+    line-height: 1em;
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+p1{
+    width: 20%;
+    text-align: left;
+    margin: 20px auto;
+    display: block;
+}
+footer{
+    display: block;
+    color: black;
+    width: 20%;
+    margin: 50px auto;
+    
+}
