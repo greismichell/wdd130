@@ -37,6 +37,7 @@ main section{
 body{
     background-color: #08283D;
     color: white;
+    margin: 0;
 }
 header{
    
@@ -82,6 +83,7 @@ h4{
 }
 footer h3{
     color: #8E338B;
+    padding: 25px;
 }    
 footer a{
    
@@ -99,4 +101,21 @@ footer h3 a:hover{
 }
 .mountains{
     margin: 2%;
+}
+footer p{
+    padding: 25px;
+}
+h1{
+    margin: 50px 0;
+}
+nav {
+    background-color: steelblue;
+    padding: 25px;
+}
+a {
+    color: white;
+    padding: 25px;
+}
+img {
+    border: 4px solid steelblue
 }
