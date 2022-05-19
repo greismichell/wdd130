@@ -4,18 +4,24 @@
 }
 nav a{
     
-    width: 2px auto;
-    margin: 1%;
+    width: 2px;
+    margin: 0;
     text-align: center;
-    color: white;
+    color: #08283D;
     text-decoration: none;
+    padding: 35px;
 }
 .logo{
-width: 5%;
+    width: 5%;
+    border: #08283D
+}
+#logo_link{
+    padding: 5px;
 }
 #hero-img{
     text-align: center;
     width: 100%;
+    border: #08283D;
 }
 #hero-msg h1, #hero-msg h4{
     
@@ -29,18 +35,23 @@ width: 5%;
 main section{
     text-align: center;
 }
+main section img{
+    box-sizing: border-box;
+}
 #background {
     height: 725px;
-    background-color: aquamarine;
+    background-color: slategray;
 
 }
 body{
     background-color: #08283D;
     color: white;
     margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-size: 22px;
 }
 header{
-   
     background-color: #08283D;
     color: white;
 }
@@ -50,44 +61,60 @@ nav a:hover{
 }
 .book, .join{
     text-decoration: none;
-    background-color: #08283D;
-    color: #8E338B;
-    font-size: 30px;
+    background-color: #8E338B;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0 ;
+    
 }
 .book:hover, .join:hover{
-    background-color: #08283D;
-    color: #A9F72A;
+    background-color: #A9F72A;
+    color: #08283D;
 }
 
 .msg h2{
     
     text-align: center;
-    background-color: white;
+    background-color: #A9F72A;
     color:#08283D
 }
+
 footer{
     background-color: #8E338B;
     color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 h4{
     color: white;
 }
 .home-title{
     color: white;
-}
-.msg h2{
-    color: #08283D;
+    margin-top: 10px;
 }
 .msg p{
-    color: white;
+    background-color: #A9F72A;
+    color: #08283D;
+    font-size: 1.5em;
+    padding-bottom: 15px;
+}
+.msg{
+    line-height: 1.5em;
+    padding: 35px;
+    background-color: #A9F72A;
 }
 footer h3{
-    color: #8E338B;
+    color: white;
     padding: 25px;
 }    
 footer a{
    
-    color: turquoise;
+    color: white;
     text-decoration: none;
 }
 footer a:hover{
@@ -95,27 +122,40 @@ footer a:hover{
 }
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 footer h3 a:hover{
     text-decoration: underline;
 }
 .mountains{
-    margin: 2%;
+    border: #08283D;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 footer p{
     padding: 25px;
 }
 h1{
-    margin: 50px 0;
+    margin: 50px;
+}
+h2{
+    margin: 0;
 }
 nav {
-    background-color: steelblue;
+    background-color: #A9F72A;
     padding: 25px;
 }
 a {
     color: white;
-    padding: 25px;
+    padding: 25px 0;
 }
 img {
-    border: 4px solid steelblue
+    border: 4px solid #08283D;
+}
+footer .social img{
+    padding-top: 15px;
+    border: #6589;
+}
+.card-img{
+    border: 10px solid slategray;
 }
