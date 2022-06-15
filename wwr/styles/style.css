@@ -242,9 +242,6 @@ footer .social img{
     margin: auto;
     border-radius: 10px;
 }
-pr{
-    text-align: left
-}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
