@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Chronus| Website Benefits | subpage</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/Chronus.png" alt="Chronus logo">
+            </a>
+            <nav>
+                <a href="index.html" >Home</a>
+                <a href="websitebenefits.html">Website Benefits</a>
+                <a href="websitestyles.html">Website Styles</a>
+                <a href="site-plan.html">Site Plan</a>  
+            </nav>
+            <b id="icon_link" href="index.html">
+                <img class="icon" src="images/webbenefits_icon.png" alt="Web Benefits icon">
+            </b>
+        </header>
+        <div id="roof">
+            <div id="roof-box">
+                <img id="roof-img" src="images/pexels-ylanite-koppens-843266.jpg" alt="colors ">
+            </div>
+        </div>
+           
+        <main class="home-grid-subpage1">
+            <section class="presentation-msg">
+                    <h2>Website Benefits</h2>
+                    <p>Why have a website? What are the benefits? How to know if this is for you? If you dream of increasing the scope of your business exponentially, this is for you. Statistically it is proven that the implementation of websites for a business makes it grow quickly. And We are the best to help you!</p>
+            </section>
+            <div id="background"></div>
+            <img class="benefit-img" src="images/page2_img1.jpg" alt="reviews">
+            <section class="packages">
+                    <h2> Make your Brand Grow</h2>
+                    <ul class="packages-card">
+                        <img src="images/page2_img2.jpg" alt="statistics">
+                        <li class="statistics-card">
+                            <h2>Advantages of Having a Website</h2>
+                        <p>- Expand the reach of your business.</p>
+                        <p>- Increase your profit.</p>
+                        <p>- Grow and publicize your brand.</p>
+                        <P>- Your business grows exponentially.</P>
+                        <P>- Your customers have greater accessibility to your products..</P>
+                        <p>- You can get and give the opportunity of payments quickly and easily..</p>
+                        <p>- You free yourself from heavy schedules, with flexible hours</p>
+                        <p>- Organization increase</p>
+                        </li>
+                    </ul>  
+            </section>
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                      <label for="mail">E-mail:</label>
+                      <input type="email" id="mail" name="user_email">
+                    </li>
+                    <li>
+                      <label for="msg">Message:</label>
+                      <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                </ul>
+            </form>
+            <img class="enjoying" src="images/home_image2.jpg" alt="people enjoying">
+        </main>
+        <footer>
+            <h3>Chronus & copy; 2022 - Greis M. Garcia</h3>
+            <p><a href="https://www.freepik.com/vectors/delegation">Image-Delegation vector created by pch.vector - www.freepik.com</a></p>
+            <h3><a href="site-plan-rafting.html">Site Plan</a></h3>
+            <h3><a href="websitebenefits.html">Website Benefits</a></h3>
+            <h3><a href="websitestyles.html">Website Styles</a></h3>
+
+
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"> 
+                    <img src="images/facebook.png" alt="fb icon">
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            
+            </div>
+        </footer>
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>

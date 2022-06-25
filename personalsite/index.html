@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Chronus | Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/Chronus.png" alt="Chronus logo">
+            </a>
+            <nav>
+                <a href="index.html" >Home</a>
+                <a href="websitebenefits.html">Website Benefits</a>
+                <a href="websitestyles.html">Website Styles</a>
+                <a href="site-plan.html">Site Plan</a>  
+            </nav>
+            <b id="icon_link" href="index.html">
+                <img class="icon" src="images/home_icon.png" alt="Home icon">
+            </b>
+        </header>
+        <div id="roof">
+            <div id="roof-box">
+                <img id="roof-img" src="images/rsz_6316.jpg" alt="colors ">
+            </div>
+            <section id="roof-msg">
+                <h1 class="home-title">Becoming Your Dreams Reality</h1>
+                <h4>by expanding your horizons</h4>
+            </section>
+        </div>
+           
+        <main class="home-grid">
+            <img class="presentation-img" src="images/home_page1.jpg" alt="colors ">
+            <section class="presentation-msg">
+                    <h2>About Us</h2>
+                    <p>We are a little company but absolute prepare to offer you the best service to do your website or enhance it. Since 2021 we have been interested in helping those who want to expand or improve their business, whether large or small, but with a desire to grow. All this is possible thanks to the use of technology, and with our knowledge and your ideas, we can together grow your business and expand your horizons.</p>
+            </section>
+            <section class="reviews-card">
+                <h2>Reviews</h2>
+                <img class="reviews-img" src="images/Add a heading.png" alt="reviews">
+                <img class="reviews-img" src="images/Add a heading-2.png" alt="reviews">
+            </section>
+            <section class="packages">
+                    <h2> Available Packages</h2>
+                    <ul class="packages-card">
+                        <li class="basic-card">
+                            <h2>Package 1 - $149</h2>
+                        <p>- Evaluation of the business or the existing website.</p>
+                        <p>- Wireframe creation.</p>
+                        <p>- Web design of a website without subpages.</p>
+                        <P>- Website creation: Basic website or Online store.</P>
+                        <P>- A hyper link to some social network.</P>
+                        <p>- Minor changes to your website.</p>
+                        <p>- We build your websitein 1 month</p>
+                        </li>
+                        <li class="basic-card">
+                            <h2>Package 2 - $200</h2>
+                            <p>- Major changes to your website</p>
+                            <p>- Evaluation of the business or the existing website.</p>
+                            <p>- Wireframe creation.</p>
+                            <p>- Web design of a website with two subpages.</p>
+                            <P>- Website creation: medium website or Online store.</P>
+                            <P>- Two hyper link to some social network.</P>
+                            <p>- 30 day money-back guarantee</p>
+                            <p>- Free hosting for 5 years</p>
+                            <p>- Pay annual</p>
+                            <p>- We build your websitein 3 weeks</p>
+                        </li>
+                        <li class="basic-card">
+                            <h2>Package 3 - $350 </h2>
+                            <p>- Professional website or online store</p>
+                            <p>- Hyper links to you social media pages</p>
+                            <p>- Mayor changes to your website</p>
+                            <p>- Web design of a website with three or more subpages.</p>
+                            <p>- We build your websitein 5 days</p>
+                            <p>- Personalized tutorials to know how to manage and edit your website</p>
+                            <p>- Personalized plans to help you reach your goals</p>
+                            <p>- Free account tools such Payments metods, Forms and more</p>
+                            <p>- 60 day money-back guarantee</p>
+                            <p>- 0% of montly or annual fees</p>
+                            <p>- Free hosting for life</p>
+                            <p>- Pay once</p>
+                        </li>
+                    </ul>  
+            </section>
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                      <label for="mail">E-mail:</label>
+                      <input type="email" id="mail" name="user_email">
+                    </li>
+                    <li>
+                      <label for="msg">Message:</label>
+                      <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                </ul>
+            </form>
+            <img class="enjoying" src="images/home_image2.jpg" alt="people enjoying">
+        </main>
+        <footer>
+            <h3>Chronus & copy; 2022 - Greis M. Garcia</h3>
+            <p><a href="https://www.freepik.com/vectors/delegation">Image-Delegation vector created by pch.vector - www.freepik.com</a></p>
+            <h3><a href="site-plan-rafting.html">Site Plan</a></h3>
+            <h3><a href="websitebenefits.html">Website Benefits</a></h3>
+            <h3><a href="websitestyles.html">Website Styles</a></h3>
+
+
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"> 
+                    <img src="images/facebook.png" alt="fb icon">
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            
+            </div>
+        </footer>
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
