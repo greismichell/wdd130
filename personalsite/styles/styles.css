@@ -101,7 +101,6 @@ nav a:hover{
     margin-top: 50px;
     border-radius: 10px;
     background-color: #538c85;
-    justify-content: baseline;
     grid-column: 6/10;
     grid-row: 1/4
 }
