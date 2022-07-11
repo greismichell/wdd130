@@ -84,27 +84,35 @@
                         </li>
                     </ul>  
             </section>
-            <div id="feedback"></div>
-            <form action="/my-handling-form-page" method="post">
-                <ul>
-                    <li>
-                      <label for="name">Name:</label>
-                      <input type="text" id="name" name="user_name">
-                    </li>
-                    <li>
-                      <label for="mail">E-mail:</label>
-                      <input type="email" id="mail" name="user_email">
-                    </li>
-                    <li>
-                      <label for="msg">Message:</label>
-                      <textarea id="msg" name="user_message"></textarea>
-                    </li>
-                    <li class="button">
-                        <button type="submit">Send your message</button>
-                    </li>
-                </ul>
-            </form>
+            <section class="enjoying-box">
+                <!-- Button to open the modal login form -->
+                <button class="contact-us-button" onclick="document.getElementById('id01').style.display='block'">Contact Us</button>
+                <div id="id01" class="modal">
+                    <div id="feedback"></div>
+                    <form class="modal-content animate" action="/action_page.php">
+                        <ul>
+                            <li>
+                              <label for="name">Name:</label>
+                              <input type="text" id="name" name="user_name">
+                            </li>
+                            <li>
+                              <label for="mail">E-mail:</label>
+                              <input type="email" id="mail" name="user_email">
+                            </li>
+                            <li>
+                              <label for="msg">Message:</label>
+                              <textarea id="msg" name="user_message"></textarea>
+                            </li>
+                            <li>
+                                <button class="button-submit" type="submit">Send your message</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </section>
             <img class="enjoying" src="images/home_image2.jpg" alt="people enjoying">
+
+            
         </main>
         <footer>
             <h3>Chronus & copy; 2022 - Greis M. Garcia</h3>
@@ -141,6 +149,15 @@
             // add a class to move everything down so our message doesn't cover it.
             document.body.classList.toggle('moveDown');
         });
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
     </script>
 </body>
 </html>
